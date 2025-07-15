@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thanavur Rahman</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles2.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">TR</div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links desktop-nav">
+                <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#resume" class="nav-link" data-section="resume">Resume</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#hero" class="mobile-nav-link" data-section="hero">Home</a>
+            <a href="#about" class="mobile-nav-link" data-section="about">About</a>
+            <a href="#skills" class="mobile-nav-link" data-section="skills">Skills</a>
+            <a href="#projects" class="mobile-nav-link" data-section="projects">Projects</a>
+            <a href="#resume" class="mobile-nav-link" data-section="resume">Resume</a>
+            <a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-avatar">TR</div>
+
+                        <h1 class="hero-title">
+                            <span class="gradient-text">Thanavur Rahman</span>
+                        </h1>
+
+                        <p class="hero-subtitle">Software Engineering Student</p>
+                        <p class="hero-role">Aspiring AI Engineer</p>
+
+                        <p class="hero-description">
+                            Passionate about creating intelligent solutions through code.
+                            Specialized in Python, Java, TensorFlow, and cloud technologies.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="https://github.com/ThanavurRahman" target="_blank"
+                                class="btn btn-outline btn-blue">
+                                <i data-lucide="github"></i>
+                                GitHub
+                            </a>
+                            <a href="https://shorturl.at/5QXOs" target="_blank" class="btn btn-outline btn-purple">
+                                <i data-lucide="linkedin"></i>
+                                LinkedIn
+                            </a>
+                            <button onclick="scrollToSection('contact')" class="btn btn-outline btn-pink">
+                                <i data-lucide="mail"></i>
+                                Contact
+                            </button>
+                        </div>
+
+                        <button onclick="scrollToSection('about')" class="scroll-indicator">
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                    </div>
+
+                    <div class="hero-photo">
+                        <div class="photo-container">
+                            <img src="photo.jpg" alt="Thanavur Rahman" class="profile-photo">
+                            <div class="photo-border"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        About <span class="gradient-text">Me</span>
+                    </h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a dedicated Software Engineering student with a passion for artificial intelligence
+                            and cutting-edge technology. Currently pursuing my degree while building practical
+                            experience through hands-on projects and continuous learning.
+                        </p>
+
+                        <p>
+                            My journey in technology started with curiosity about how intelligent systems work,
+                            which led me to explore machine learning, deep learning, and AI development.
+                            I believe in the power of technology to solve real-world problems and create
+                            meaningful impact.
+                        </p>
+
+                        <p>
+                            When I'm not coding, you'll find me exploring the latest developments in AI,
+                            contributing to open-source projects, or learning new technologies that push
+                            the boundaries of what's possible.
+                        </p>
+                    </div>
+
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <i data-lucide="code" class="highlight-icon"></i>
+                            <h3>Software Development</h3>
+                            <p>Experienced in building scalable applications with modern technologies</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i data-lucide="brain" class="highlight-icon"></i>
+                            <h3>AI & Machine Learning</h3>
+                            <p>Passionate about creating intelligent systems and AI-driven solutions</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i data-lucide="lightbulb" class="highlight-icon"></i>
+                            <h3>Problem Solving</h3>
+                            <p>Creative approach to complex challenges with innovative solutions</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i data-lucide="users" class="highlight-icon"></i>
+                            <h3>Collaboration</h3>
+                            <p>Strong team player with excellent communication skills</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        Technical <span class="gradient-text">Skills</span>
+                    </h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">
+                        A comprehensive toolkit for building intelligent, scalable, and modern applications.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-icon blue-gradient">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <h3>Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-icon purple-gradient">
+                            <i data-lucide="brain"></i>
+                        </div>
+                        <h3>AI & Machine Learning</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">Keras</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">NLP</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-icon green-gradient">
+                            <i data-lucide="cloud"></i>
+                        </div>
+                        <h3>Cloud & DevOps</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Azure</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-icon orange-gradient">
+                            <i data-lucide="wrench"></i>
+                        </div>
+                        <h3>Development Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        Featured <span class="gradient-text">Projects</span>
+                    </h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">
+                        A showcase of my work in AI, web development, and software engineering.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>AI Image Recognition System</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i data-lucide="github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Deep learning model using TensorFlow for real-time image classification with 95% accuracy.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">OpenCV</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Cloud-Native Web App</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i data-lucide="github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Full-stack application deployed on AWS with Docker containers and CI/CD pipeline.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Natural Language Processor</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i data-lucide="github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Advanced NLP system for sentiment analysis and text summarization using transformer models.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Transformers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="gradient-text">Resume</span>
+                    </h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="resume-content">
+                    <div class="resume-preview">
+                        <div class="resume-header">
+                            <h3>Thanavur Rahman</h3>
+                            <p>Software Engineering Student | AI Enthusiast</p>
+                        </div>
+
+                        <div class="resume-section">
+                            <h4>Education</h4>
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <h5>Bachelor of Computing Honours Software Engineering</h5>
+                                    <span>2024 - 2028</span>
+                                </div>
+                                <p>University of Sri Jayewardenepura</p>
+                            </div>
+                        </div>
+
+                        <div class="resume-section">
+                            <h4>Experience</h4>
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <h5>Software Development Intern</h5>
+                                    <span>Summer 2024</span>
+                                </div>
+                                <p>Tech Company • Developed AI-powered applications</p>
+                            </div>
+                        </div>
+
+                        <div class="resume-section">
+                            <h4>Key Skills</h4>
+                            <p>Python, Java, TensorFlow, AWS, React, Machine Learning</p>
+                        </div>
+                    </div>
+
+                    <div class="resume-actions">
+                        <button onclick="downloadResume()" class="btn btn-primary">
+                            <i data-lucide="download"></i>
+                            Download Resume
+                        </button>
+                        <button onclick="viewResume()" class="btn btn-outline btn-secondary">
+                            <i data-lucide="eye"></i>
+                            View Full Resume
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        Get In <span class="gradient-text">Touch</span>
+                    </h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">
+                        Ready to collaborate or discuss opportunities? Let's connect!
+                    </p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i data-lucide="mail" class="contact-icon"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:thanarah123@gmail.com">thanarah123@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i data-lucide="linkedin" class="contact-icon"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p><a href="https://shorturl.at/5QXOs" target="_blank">linkedin.com/in/ThanavurRahman</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i data-lucide="github" class="contact-icon"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p><a href="https://github.com/ThanavurRahman"
+                                        target="_blank">github.com/ThanavurRahman</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i data-lucide="send"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Thanavur Rahman. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
